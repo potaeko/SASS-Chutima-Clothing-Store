@@ -1,0 +1,59 @@
+.dropdown-li {
+    position: relative;
+    //dropdown arrow after Gift Ideas
+    &::after {
+        font-family: 'Font Awesome 5 Free';
+        Content: '\f078';
+        font-weight: bold;
+    }
+
+    &:hover .dropdown {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+.dropdown {
+    position: absolute;
+    top: 3rem;
+    width: 10rem;
+    background-color: darken(color(tertiary), 5%);
+    @include navigation;
+    padding: 1rem;
+    right: -2.8rem;
+    text-align: center;
+    border-radius: 0.2rem;
+    -webkit-border-radius: 0.2rem;
+    -moz-border-radius: 0.2rem;
+    -ms-border-radius: 0.2rem;
+    -o-border-radius: 0.2rem;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .3s;
+    -webkit-transition: opacity .3s;
+    -moz-transition: opacity .3s;
+    -ms-transition: opacity .3s;
+    -o-transition: opacity .3s;
+    
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: -1.5rem;
+        left: 7.3rem;
+        //Making triangle
+        // border-top: 15px solid red;
+        border-right: 15px solid transparent;
+        border-bottom: 15px solid darken(color(tertiary), 5%);
+        border-left: 15px solid transparent; 
+    }
+
+    &-item {
+        margin: .5rem 0;
+    }
+
+    &-link {
+        font-weight: 300;
+        font-size: size(xs);
+    }
+}

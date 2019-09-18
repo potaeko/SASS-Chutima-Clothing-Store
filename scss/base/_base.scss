@@ -5,5 +5,18 @@
 }
 
 html {
+    //1 rem = 16px;
+    //we want 1 rem = 10px;
     font-size: 62.5%;
+}
+
+.container {
+    display: grid;
+    //grid columns
+    grid-template-columns: minmax(6rem, 1fr) repeat(8, minmax(min-content, 16rem)) minmax(6rem, 1fr);
+    //grid rows
+    grid-template-rows: repeat(4, min-content);
+    //space between row
+    grid-row-gap: 1.6rem;
+    background-color: color(tertiary);
 }
