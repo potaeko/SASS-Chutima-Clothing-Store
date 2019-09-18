@@ -21,3 +21,10 @@
         }
     }
 }
+//set default value to center
+@mixin flexPosition($JustCont: center, $alignIte: center) {
+    display: flex;
+    justify-content: $JustCont;
+    align-items: $alignIte;
+
+}

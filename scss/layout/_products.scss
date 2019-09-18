@@ -1,0 +1,91 @@
+.products {
+    grid-column: 1 / -1;
+    grid-row: 3 / 4;
+
+    &-heading {
+        margin: 5rem 0;
+
+        &-text {
+            text-align: center;
+            font-size: size(lg) + 2rem;
+            font-weight: 300;
+            color: color(primary);
+        }
+    }
+
+    &-wrapper {
+        //default center
+        @include flexPosition;
+    }
+}
+
+.product {
+    position: relative;
+
+    &:hover .product-description {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &:hover .product-img {
+        opacity: .5;
+    }
+
+    &-img {
+        //responsive
+        width: 100%;
+        transition:all 1s .3s;
+        -webkit-transition:all 1s .3s;
+        -moz-transition:all 1s .3s;
+        -ms-transition:all 1s .3s;
+        -o-transition:all 1s .3s;
+    }
+
+    &-description {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        background-color: transparentize(color(secondary), .4);
+        padding: 2rem;
+        border: .1rem solid color(primary);
+        border-radius: .5rem;
+        color: color(primary);
+        text-align: center;
+        opacity: 0;
+        visibility: hidden;
+        transition:all 1s .3s;
+        -webkit-transition:all 1s .3s;
+        -moz-transition:all 1s .3s;
+        -ms-transition:all 1s .3s;
+        -o-transition:all 1s .3s;
+
+        &-heading {
+            font-size: size(lg);
+        }
+
+        &-price {
+            font-size: size(md);
+            font-weight: 100;
+            margin: 1rem 0;
+
+            span {
+                font-weight: 100;
+            }
+        }
+
+        &-btn {
+            font-size: size(xs);
+            text-decoration: none;
+            color: color(quaternary);
+            display:block;
+            padding: .5rem 1rem;
+            border: .1rem solid color(quaternary);
+            background-color: lighten(color(secondary), 50%);
+        }
+    }
+}
