@@ -175,7 +175,7 @@ html {
     -ms-transition: all 1s .3s;
     -o-transition: all 1s .3s; }
     .product-description-heading {
-      font-size: 2.5rem; }
+      font-size: 2rem; }
     .product-description-price {
       font-size: 2rem;
       font-weight: 100;
@@ -201,8 +201,10 @@ html {
   grid-row: 1 / 2;
   padding: 1rem; }
   .logo-img {
-    width: 10rem;
-    height: 100%; }
+    width: 5rem;
+    height: 70%;
+    margin-left: 4rem;
+    margin-top: 1rem; }
 
 .heading {
   grid-column: 4 / 7;
