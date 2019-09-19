@@ -19,6 +19,7 @@
 }
 
 .contact {
+    width: 60%;
 
     @include response(lg){
         padding: 0 10rem;
