@@ -5,6 +5,20 @@
     width: 100%;
     height: 80vh;
 
+    //responsive at 1200px
+    @include response(xl){
+        height: 70vh;
+    }
+    //responsive at 1000px
+    @include response(lg){
+        height: 60vh;
+    }
+
+    //response at 760px
+    @include response(md){
+        height: 50vh;
+    }
+
     &-slide {
         position: absolute;
         top: 0;
@@ -27,6 +41,7 @@
         position: absolute;
         bottom: 6rem;
         left: 6rem;
+        right: 6rem;
         max-width: 40rem;
         padding:  5rem;
 
@@ -38,6 +53,10 @@
         p {
             margin: 1rem 0;
             font-size: size(sm);
+        }
+        //response at 1000px
+        @include response(lg){
+            padding: 2rem;
         }
     }
 }

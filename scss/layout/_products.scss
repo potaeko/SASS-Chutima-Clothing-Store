@@ -64,9 +64,27 @@
         -ms-transition:all 1s .3s;
         -o-transition:all 1s .3s;
 
+        //responsive at 1100px
+        @include response(lg){
+            padding: 1rem;
+        }
+        //responsive at 560px
+        @include response(sm){
+            background-color: transparent;
+            border:none;
+        }
+
         &-heading {
             font-size: size(md);
             font-weight: 100;
+
+            // @include response(lg){
+            //     font-size: size(md);
+            // }
+
+            @include response(sm){
+                display: none;
+            }
         }
 
         &-price {
@@ -77,6 +95,14 @@
             span {
                 font-weight: 100;
             }
+
+            @include response(lg){
+                font-size: size(sm);
+            }
+
+            // @include response(sm){
+            //     display: none;
+            // }
         }
 
         &-btn {
@@ -96,7 +122,16 @@
             &:hover {
                 color: lighten(color(primary), 35%);
             }
-}
+
+            @include response(lg){
+                padding: .2rem .5rem;
+            }
+
+            @include response(sm){
+                padding: .5rem .7rem;
+                width: 7rem;
+            }
+        }
     }
 }
 
