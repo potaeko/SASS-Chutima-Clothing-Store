@@ -191,7 +191,7 @@ html {
     -o-transition: all 1s .3s; }
   .product-description {
     position: absolute;
-    top: 80%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
