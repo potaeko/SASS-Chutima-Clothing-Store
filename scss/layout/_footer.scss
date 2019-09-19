@@ -140,6 +140,7 @@
         }
     }
     .footer-copyright {
+        width: 100%;
         display:flex;
         justify-content: center;
         font-size: size(xs);
@@ -148,16 +149,20 @@
         padding-top: 2rem;
 
         @include response(md){
+            font-size: size(xs)-1.2;
             padding-top: 1rem;
+            width: 100%;
         }
 
         @include response(sm){
+            font-size: size(xs)-1.2;
             padding-top: 1rem;
+            width: 100%;
         }
     }
 }
 
-$socialMediaColors: 1 #3b5998, 2 #b31217, 3 #dc4e41, 4 #55acee, 5 #0077b5,6 #517fa4;
+$socialMediaColors: 1 #3b5998, 2 #b31217, 3 #dc4e41, 4 #55acee, 5 #0077b5,6 #0a141b;
 
 //each n as $color from $socialMediaColors
 @each $color in $socialMediaColors {
