@@ -139,6 +139,22 @@
             }
         }
     }
+    .footer-copyright {
+        display:flex;
+        justify-content: center;
+        font-size: size(xs);
+        font-weight: 100;
+        letter-spacing: 2px;
+        padding-top: 2rem;
+
+        @include response(md){
+            padding-top: 1rem;
+        }
+
+        @include response(sm){
+            padding-top: 1rem;
+        }
+    }
 }
 
 $socialMediaColors: 1 #3b5998, 2 #b31217, 3 #dc4e41, 4 #55acee, 5 #0077b5,6 #517fa4;

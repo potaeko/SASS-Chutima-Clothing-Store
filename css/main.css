@@ -397,6 +397,19 @@ html {
         @media (max-width: 560px) {
           .contact .social-icons-link i {
             font-size: 1.8rem; } }
+  .contact .footer-copyright {
+    display: flex;
+    justify-content: center;
+    font-size: 1.6rem;
+    font-weight: 100;
+    letter-spacing: 2px;
+    padding-top: 2rem; }
+    @media (max-width: 760px) {
+      .contact .footer-copyright {
+        padding-top: 1rem; } }
+    @media (max-width: 560px) {
+      .contact .footer-copyright {
+        padding-top: 1rem; } }
 
 .social-icons-item:nth-child(1) .social-icons-link {
   color: #3b5998;
