@@ -405,16 +405,22 @@ html {
     font-weight: 100;
     letter-spacing: 2px;
     padding-top: 2rem; }
+    @media (max-width: 1200px) {
+      .contact .footer-copyright {
+        font-size: 0.4rem;
+        padding-top: 1rem; } }
+    @media (max-width: 1000px) {
+      .contact .footer-copyright {
+        font-size: 0.4rem;
+        padding-top: 1rem; } }
     @media (max-width: 760px) {
       .contact .footer-copyright {
         font-size: 0.4rem;
-        padding-top: 1rem;
-        width: 100%; } }
+        padding-top: 1rem; } }
     @media (max-width: 560px) {
       .contact .footer-copyright {
         font-size: 0.4rem;
-        padding-top: 1rem;
-        width: 100%; } }
+        padding-top: 1rem; } }
 
 .social-icons-item:nth-child(1) .social-icons-link {
   color: #3b5998;

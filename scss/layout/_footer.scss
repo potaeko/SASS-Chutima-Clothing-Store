@@ -148,16 +148,24 @@
         letter-spacing: 2px;
         padding-top: 2rem;
 
+        @include response(xl){
+            font-size: size(xs)-1.2;
+            padding-top: 1rem;
+        }
+
+        @include response(lg){
+            font-size: size(xs)-1.2;
+            padding-top: 1rem;
+        }
+
         @include response(md){
             font-size: size(xs)-1.2;
             padding-top: 1rem;
-            width: 100%;
         }
 
         @include response(sm){
             font-size: size(xs)-1.2;
             padding-top: 1rem;
-            width: 100%;
         }
     }
 }
